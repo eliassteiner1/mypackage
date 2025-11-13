@@ -24,7 +24,7 @@ def greetings_producer(name: str = "World", times: int = 1):
         greet(name)
 
 def main_func(argv=None):
-    """ main entry point """
+    """ main entry point. if args=None tyro.cli just grabs sys.argv but like this it's possible to monkeypatch some args from a normal function call """
     cli_args = tyro.cli(CLIArgs, args=argv)
     greetings_producer(cli_args.name, cli_args.times)
     
