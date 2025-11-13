@@ -25,10 +25,11 @@ import mypackage
 # from mypackage.main import main_func
 
 
+# this just directly tests some important functions from the package
 if __name__ == "__main__":
     os.system("cls" if os.name == "nt" else "clear")
-
-    mypackage.main_func("Alice", 2)
+    
+    # short circuit the cli's ;)
+    mypackage.main_func(argv=["--name", "Asdf", "--times", "3"])
     
     
-

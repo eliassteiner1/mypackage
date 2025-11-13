@@ -20,4 +20,4 @@ dependencies = [
 Homepage = "https://github.com/eliassteiner1/mypackage"
 
 [project.scripts]
-mypackage-cli = "mypackage.main:cli"
+mypackage-cli = "mypackage.main:main_func"

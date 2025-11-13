@@ -6,14 +6,13 @@
 # # so this kind of preserves the namespace and is preferred I guess
 # from . import main
 
-
-from .main import main_func, cli
-from . import core
-
-
-
 # this only controls what gets imported when "from mypackage import *"" is used
 # __all__ = [
 #     "main_func"
 # ]
+
+from .main import main_func
+
+
+
 
