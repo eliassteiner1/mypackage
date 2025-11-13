@@ -9,8 +9,7 @@ description = "a simple package scaffold"
 authors = [
     {name = "Elias Steiner", email = "elias.steiner@gmx.ch"}
 ]
-license = "MIT
-license-file = "LICENSE"
+license = { file = "LICENSE" }
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
@@ -21,4 +20,4 @@ dependencies = [
 Homepage = "https://github.com/eliassteiner1/mypackage"
 
 [project.scripts]
-mypackage-main-func = "mypackage.main:main_func"
+mypackage-cli = "mypackage.main:cli"

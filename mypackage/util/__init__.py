@@ -1,1 +1,3 @@
-# I guess this would expose the main importable stuff from this package
+
+def hidden_func():
+    print("I should be hidden")
